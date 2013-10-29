@@ -1,3 +1,5 @@
+#===========================================
+# vim :python sys.path settings
 /root/root/premade_env/lib/python2.7/site-packages
 /usr/local/lib/python2.7/dist-packages/virtualenv-1.10.1-py2.7.egg
 /usr/lib/python2.7
