@@ -1,0 +1,26 @@
+#===========================================
+# vim :python sys.path settings
+/root/root/premade_env/lib/python2.7/site-packages
+/usr/local/lib/python2.7/dist-packages/virtualenv-1.10.1-py2.7.egg
+/usr/lib/python2.7
+/usr
+/lib/python2.7/plat-linux2
+/usr/lib/python2.7/lib-tk
+/usr/lib/python2.7
+/lib-old
+/usr/lib/python2.7/lib-dynload
+/usr/local/lib/python2.7/dist-packages
+/usr/lib/python2.7/dist-packages
+
+#========================================
+# Outside vim (using python interactive)
+/root/premade_env/lib/python2.7
+/root/premade_env/lib/python2.7/plat-linux2
+/root/premade_env/lib/python2.7/lib-tk
+/root/premade_env/lib/python2.7/lib-old
+/root/premade_env/lib/python2.7/lib-dynload
+/usr/lib/python2.7
+/usr/lib/python2.7/plat-linux2
+/usr/lib/python2.7/lib-tk
+/root/premade_env/local/lib/python2.7/site-packages
+/root/premade_env/lib/python2.7/site-packages
