@@ -1,9 +1,8 @@
 " General setting
 se nu
 se ai ts=4 sts=4 sw=4 et
-se ignorecase
-se smartcase
-se hlsearch
+se ignorecase smartcase hlsearch
+se cursorline
 
 " If with mouse detection
 set mousemodel=extend
@@ -13,12 +12,10 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-" Set up Omni completion
-set omnifunc=syntaxcomplete#Complete
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+" Make solarized syntax hilighting
+se t_Co=16
+se bg=dark
+colo solarized
 
 " Set python virtual path
 if has("python") && !empty($VIRTUAL_ENV)
@@ -34,3 +31,10 @@ if 'PYTHONPATH' not in os.environ:
     os.environ['PYTHONPATH'] += ":".join(sys.path)
 EOF
 endif
+
+" Set up Omni completion
+set omnifunc=syntaxcomplete#Complete
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS

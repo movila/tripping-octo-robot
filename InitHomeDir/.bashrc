@@ -103,3 +103,4 @@ fi
 # set up django settings env vars
 # 'mysite' should be changed based on your primary appname
 export DJANGO_SETTINGS_MODULE=mysite.settings
+export t_Co=16
