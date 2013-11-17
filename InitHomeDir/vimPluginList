@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Install 'pathogen' for Vim plugin
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+curl -Sso ~/.vim/autoload/pathogen.vim \
+    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+# SET UP .VIMRC FIRST TO INVOKE PATHOGEN
+# Add following comments to .vimrc
+# execute pathogen#infect()
+# syntax on
+# filetype plugin indent on
+
+# Go to vim plugin folder for plugin installision
+cd ~/.vim/bundle
+
+# Install Solarized (vim color scheme)
+git clone git://github.com/altercation/vim-colors-solarized.git
+
+# Install MatchTag (XML & HTML tags highlight)
+git clone git@github.com:gregsexton/MatchTag.git
+
+# Install syntastic (syntax checking plugin)
+git clone https://github.com/scrooloose/syntastic.git
+
+# Install xmledit (XML tag completion and tag jumping)
+git clone https://github.com/sukima/xmledit
