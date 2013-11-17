@@ -22,19 +22,24 @@ if has("python") && !empty($VIRTUAL_ENV)
     python << EOF
 import os
 import sys
+import vim
 a = os.environ['VIRTUAL_ENV'] + '/bin/activate_this.py'
 execfile(a, dict(__file__ = a))
 sys.path.append('/root/mysite/')
+sys.path.append('/root/premade_env/lib/python2.7/site-packages/')
 if 'PYTHONPATH' not in os.environ:
     os.environ['PYTHONPATH'] = ''
     os.environ['PYTHONPATH'] += ":"+os.getcwd()
     os.environ['PYTHONPATH'] += ":".join(sys.path)
 EOF
+exe ":source ~/pysmell-0.7.3/pysmell.vim"
 endif
 
 " Set up Omni completion
 set omnifunc=syntaxcomplete#Complete
-autocmd FileType python set omnifunc=pythoncomplete#Complete
+"autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd FileType python set omnifunc=pysmell#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType html set syntax=htmldjango
