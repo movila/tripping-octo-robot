@@ -18,7 +18,7 @@ cd ~/.vim/bundle
 git clone git://github.com/altercation/vim-colors-solarized.git
 
 # Install MatchTag (XML & HTML tags highlight)
-git clone git@github.com:gregsexton/MatchTag.git
+git clone https://github.com/gregsexton/MatchTag.git
 
 # Install syntastic (syntax checking plugin)
 git clone https://github.com/scrooloose/syntastic.git
