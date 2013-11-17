@@ -5,8 +5,8 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle; \
 curl -Sso ~/.vim/autoload/pathogen.vim \
     https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
 
-# SET UP .VIMRC FIRST TO INVOKE PATHOGEN
-# Add following comments to .vimrc
+# SET UP ~/.vimrc FIRST TO INVOKE PATHOGEN
+# Add following comments to ~/.vimrc
 # execute pathogen#infect()
 # syntax on
 # filetype plugin indent on
